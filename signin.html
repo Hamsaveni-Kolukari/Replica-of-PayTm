@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom right, #f8d7e4, #d7e3fc);
+            background-image: url("https://img.freepik.com/free-vector/simple-blue-gradient-background-vector-business_53876-174922.jpg?w=2000");
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color: white; 
+             text-align: center;
+             flex-direction: column;
+        }
+        .login-container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            background-color: "yellow";
+            border-radius: 8px;
+            text-align: center;
+            border-color:"balck";
+
+        }
+        .login-header {
+            margin-bottom: 20px;
+        }
+        .login-header img {
+            height: 24px;
+        }
+        .login-header h2 {
+            margin: 10px 0;
+            color: #333;
+            font-weight: 500;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+            border: 1px solid black;
+            border-radius: 4px;
+            color: #333333;
+        }
+        input[type="checkbox"] {
+            
+            margin-right:10px;
+        }
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+        .forgot-password a {
+            color:#0073e6;; 
+            text-decoration: none;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0073e6;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .textc label {
+            color:black;
+        }
+        btn:hover {
+            background: linear-gradient(to right, #0f3443, #34e89e); 
+        }
+        .sign-up {
+            margin-top: 15px;
+            font-size: 14px;
+            color:black;
+        }
+        .sign-up a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .sign-up a:hover {
+            color: #005bb5; 
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="login-container">
+        <div class="login-header">
+            <img src="https://www.india.com/wp-content/uploads/2017/01/BHIM-vs-Paytm.jpg" alt="Paytm Logo">
+            <h2>Login</h2>
+        </div>
+        <form action="/signin" method="post">
+            <div class="input-group">
+                <label for="email">Paytm Email or Mobile</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Paytm Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="forgot-password">
+                <a href="/forgot-password">Forgot Password?</a>
+            </div>
+            <div  class="textc" >
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" >I accept the <a href="/terms">Terms and Conditions</a> and <a href="/privacy">Privacy Policy</a> of Paytm Money</label><br><br>
+            
+            </div>
+            <button type="submit" class="btn">SIGN IN</button>
+            <div class="sign-up">
+                Don't have an account? <a href="signup.html">Sign Up</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

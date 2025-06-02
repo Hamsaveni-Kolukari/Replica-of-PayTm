@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Signup Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            background-image:url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-08.jpg")
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] ,
+        input[type="email"]{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #0095dd;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+.social-login {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.google-btn, .facebook-btn {
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.google-btn img, .facebook-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-btn:hover, .facebook-btn:hover {
+    background-color:light orange ;
+}
+</style>
+</head>
+<body>
+    <form>
+        <h1>Sign Up</h1>
+        <label for="mobile_number">Mobile Number</label>
+        <input type="text" id="mobile_number" placeholder="Enter your mobile number"><br>
+
+        <label for="email">Email ID</label>
+        <input type="email" id="email" placeholder="Enter your email address"><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password"><br><br>
+
+        <div style="display: flex; align-items: center;">
+            <input type="checkbox" id="age_verification">
+            <label for="age_verification">I hereby certify that I am 18 years of age.</label><br>
+        </div>
+
+        <button type="submit">Create your Paytm Wallet</button><br><br>
+        
+        
+
+        
+        <div class="social-login">
+                <a href="#" class="google-btn">
+                    <img src="https://i.pinimg.com/originals/8c/03/0b/8c030bd6bd7ee87ad41485e3c7598dd4.png" alt="Google Logo">
+                    Sign in with Google
+                </a>
+                <a href="#" class="facebook-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook Logo">
+                    Sign in with Facebook
+                </a>
+            </div>
+            <p>By Signing Up you agree to our <a href="#">T&C</a> and <a href="#">Privacy Policy</a>.</p>
+    </form>
+    
+</body>
+</html>
+
+
